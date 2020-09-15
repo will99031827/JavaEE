@@ -1,0 +1,23 @@
+<html>
+  <head>
+	<title>登陆</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+  </head>
+  <script type="text/javascript">
+	function formCheck(){
+		if(document.form1.userName.value==""){
+			alert('请输入姓名');
+			return false;
+		}	
+	}
+  </script>
+  <body>
+    <form action="treat.jsp" method="post" name="form1">
+      用户名<input type="text" name="userName" />
+      密  码<input type="password" name="userPassw" />
+	  <input type="submit" value="登陆" onclick="return formCheck()" />
+    </form>
+  </body>
+</html>
+
+
